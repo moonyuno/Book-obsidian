@@ -1,0 +1,6 @@
+- Heavenly title: Nan Yang (Southern Sun)
+- - martial art god of the southeast
+- short fuse and foul mouth
+- arch nemesis: [[Mu Qing]]
+- complicated history with [[Xie Lian]], once was his bodyguard and close friend
+- #TGCF 

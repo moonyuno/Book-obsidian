@@ -1,0 +1,121 @@
+/* ============================================================
+   Wiki Infobox — Danmei Aesthetic
+   for cssclass: wiki
+   ============================================================ */
+
+.markdown-preview-view.wiki {
+  --wiki-red-1: hsl(2 60% 32% / .88);
+  --wiki-red-2: hsl(0 44% 14% / .92);
+  --wiki-red-3: hsl(0 72% 42% / .92);
+  --wiki-border: rgba(255, 120, 120, .18);
+  --wiki-border-strong: rgba(255, 120, 120, .28);
+  --wiki-text: #f3dede;
+  --wiki-text-soft: rgba(255, 220, 220, .78);
+  --wiki-accent: #ff9e9e;
+  --wiki-shadow: 0 8px 28px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+/* right-aligned infobox */
+.markdown-preview-view.wiki .callout[data-callout="infobox"],
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] {
+  float: right;
+  width: 320px;
+  margin: 0 0 1.4rem 2rem;
+  background: linear-gradient(145deg, var(--wiki-red-1), var(--wiki-red-2));
+  border: 1px solid var(--wiki-border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--wiki-shadow);
+  backdrop-filter: blur(4px);
+}
+
+/* remove default icon */
+.markdown-preview-view.wiki .callout[data-callout="infobox"] .callout-icon,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] .callout-icon {
+  display: none;
+}
+
+/* title */
+.markdown-preview-view.wiki .callout[data-callout="infobox"] .callout-title,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] .callout-title {
+  justify-content: center;
+  text-align: center;
+  padding: 1rem .9rem .8rem;
+  background:
+    linear-gradient(145deg, hsl(0 72% 42% / .92), hsl(0 54% 22% / .94));
+  color: #ffe3e3;
+  border-bottom: 1px solid var(--wiki-border-strong);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+/* ornamental line under title */
+.markdown-preview-view.wiki .callout[data-callout="infobox"] .callout-title::after,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] .callout-title::after {
+  content: "✦  •  ✦";
+  display: block;
+  margin-top: .35rem;
+  font-size: .7rem;
+  letter-spacing: .18em;
+  color: rgba(255, 210, 210, .55);
+}
+
+/* content area */
+.markdown-preview-view.wiki .callout[data-callout="infobox"] .callout-content,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] .callout-content {
+  padding: 0;
+  color: var(--wiki-text);
+}
+
+/* image */
+.markdown-preview-view.wiki .callout[data-callout="infobox"] img,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] img {
+  display: block;
+  width: calc(100% - 24px);
+  margin: 14px auto 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,.22);
+}
+
+/* broken embed / missing image box */
+.markdown-preview-view.wiki .callout[data-callout="infobox"] .internal-embed.is-broken,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] .internal-embed.is-broken,
+.markdown-preview-view.wiki .callout[data-callout="infobox"] .media-embed.is-broken,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] .media-embed.is-broken {
+  margin: 14px 12px 10px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(20, 16, 35, .45);
+  color: rgba(255,220,220,.72);
+}
+
+/* optional caption text */
+.markdown-preview-view.wiki .callout[data-callout="infobox"] p,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] p {
+  margin: 0;
+}
+
+.markdown-preview-view.wiki .callout[data-callout="infobox"] p:has(em),
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] p:has(em) {
+  text-align: center;
+  padding: 0 1rem .9rem;
+  color: rgba(255,210,210,.72);
+  font-size: .9rem;
+}
+
+/* infobox tables */
+.markdown-preview-view.wiki .callout[data-callout="infobox"] table,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.markdown-preview-view.wiki .callout[data-callout="infobox"] th,
+.markdown-preview-view.wiki .callout[data-callout="infobox"] td,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] th,
+.markdown-preview-view.wiki .callout[data-callout="wiki-box"] td {

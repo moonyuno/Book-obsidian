@@ -1,0 +1,127 @@
+/* ============================================================
+   DANMEI SYNOPSIS CALLOUT — Book Back Cover Style
+   Usage: > [!synopsis] Title
+   ============================================================ */
+
+.callout[data-callout="synopsis"] {
+  --callout-color: 120, 60, 60;
+  background: linear-gradient(
+    160deg,
+    rgba(52, 18, 24, 0.92) 0%,
+    rgba(38, 12, 18, 0.96) 100%
+  ) !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(180, 120, 120, 0.25),
+    0 0 0 4px rgba(28, 10, 14, 0.95),
+    0 0 0 5px rgba(180, 120, 120, 0.15),
+    0 8px 32px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* ── Decorative corner flourishes via pseudo-elements ─── */
+.callout[data-callout="synopsis"]::before,
+.callout[data-callout="synopsis"]::after {
+  content: "❧";
+  position: absolute;
+  font-size: 1.4rem;
+  color: rgba(200, 140, 140, 0.4);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.callout[data-callout="synopsis"]::before {
+  top: 10px;
+  left: 14px;
+  transform: scaleX(-1);
+}
+
+.callout[data-callout="synopsis"]::after {
+  bottom: 10px;
+  right: 14px;
+}
+
+/* ── Hide the default callout icon ───────────────────── */
+.callout[data-callout="synopsis"] .callout-icon {
+  display: none !important;
+}
+
+/* ── Title bar — centered, decorative ───────────────── */
+.callout[data-callout="synopsis"] .callout-title {
+  padding: 20px 32px 12px !important;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(180, 120, 120, 0.15) !important;
+  justify-content: center !important;
+  text-align: center;
+}
+
+.callout[data-callout="synopsis"] .callout-title-inner {
+  color: rgba(230, 195, 195, 0.95) !important;
+  font-size: 1.05em !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em;
+  text-align: center;
+  font-style: normal;
+  /* decorative divider under title */
+  display: block;
+}
+
+/* ── Top ornament line above title ───────────────────── */
+.callout[data-callout="synopsis"] .callout-title::before {
+  content: "· ✦ · ✦ · ✦ ·";
+  display: block;
+  text-align: center;
+  font-size: 0.65em;
+  color: rgba(200, 140, 140, 0.45);
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+  font-style: normal;
+}
+
+/* ── Bottom ornament line under title ────────────────── */
+.callout[data-callout="synopsis"] .callout-title::after {
+  content: "· ✦ · ✦ · ✦ ·";
+  display: block;
+  text-align: center;
+  font-size: 0.65em;
+  color: rgba(200, 140, 140, 0.45);
+  letter-spacing: 0.15em;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+/* ── Content area ────────────────────────────────────── */
+.callout[data-callout="synopsis"] .callout-content {
+  padding: 16px 28px 22px !important;
+}
+
+.callout[data-callout="synopsis"] .callout-content p {
+  color: rgba(215, 185, 185, 0.88) !important;
+  font-size: 0.88em !important;
+  line-height: 1.85 !important;
+  text-align: justify !important;
+  margin: 0 0 0.7em 0 !important;
+  text-indent: 1.2em;
+}
+
+.callout[data-callout="synopsis"] .callout-content p:first-child {
+  text-indent: 0;
+}
+
+.callout[data-callout="synopsis"] .callout-content p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* ── Bottom ornament ─────────────────────────────────── */
+.callout[data-callout="synopsis"] .callout-content::after {
+  content: "❧";
+  display: block;
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgba(200, 140, 140, 0.35);
+  margin-top: 14px;
+}

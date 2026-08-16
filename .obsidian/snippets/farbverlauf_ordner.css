@@ -1,0 +1,96 @@
+/* Obsidian Sidebar Folder – red → dark red
+   v1.2 */
+
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder {
+  background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
+  border-radius: 10px;
+  --nav-item-color: #fff1f1;
+  --nav-item-color-hover: #ffffff;
+  --nav-item-color-active: #ffffff;
+  --nav-collapse-icon-color: #ffffff;
+  color: var(--nav-item-color);
+  transition: filter .15s ease, transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 1px 6px rgba(0,0,0,.16) inset, 0 0 0 1px rgba(255,255,255,.05);
+}
+
+/* text */
+.nav-folder .nav-folder-title,
+.nav-folder .nav-folder-title-content {
+  color: var(--nav-item-color);
+}
+
+/* hover/active */
+.nav-folder-children > .nav-folder:hover,
+.nav-files-container > div > .nav-folder:hover {
+  filter: brightness(1.08) saturate(1.02);
+  transform: translateY(-1px);
+}
+
+.nav-folder.is-active,
+.nav-folder.is-selected {
+  filter: brightness(1.12) saturate(1.04);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.12), 0 2px 12px rgba(0,0,0,.28) inset;
+}
+
+/* red to dark red variations */
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 2) {
+  --grad-start: hsl(2 72% 52% / .92);
+  --grad-end:   hsl(0 58% 26% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 3) {
+  --grad-start: hsl(4 70% 50% / .92);
+  --grad-end:   hsl(1 56% 24% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 4) {
+  --grad-start: hsl(0 68% 48% / .92);
+  --grad-end:   hsl(0 54% 22% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 5) {
+  --grad-start: hsl(5 66% 47% / .92);
+  --grad-end:   hsl(2 52% 21% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 6) {
+  --grad-start: hsl(1 64% 45% / .92);
+  --grad-end:   hsl(0 50% 20% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 7) {
+  --grad-start: hsl(6 62% 44% / .92);
+  --grad-end:   hsl(3 48% 19% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 8) {
+  --grad-start: hsl(0 60% 42% / .92);
+  --grad-end:   hsl(0 46% 18% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 9) {
+  --grad-start: hsl(4 58% 40% / .92);
+  --grad-end:   hsl(1 44% 17% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 10) {
+  --grad-start: hsl(1 56% 38% / .92);
+  --grad-end:   hsl(0 42% 16% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 11) {
+  --grad-start: hsl(6 54% 36% / .92);
+  --grad-end:   hsl(2 40% 15% / .92);
+}
+.nav-folder-children > .nav-folder,
+.nav-files-container > div > .nav-folder:nth-child(11n + 12) {
+  --grad-start: hsl(0 52% 34% / .92);
+  --grad-end:   hsl(0 38% 14% / .92);
+}
+
+/* subtle glass on dark */
+.theme-dark .nav-folder {
+  backdrop-filter: blur(2px);
+}

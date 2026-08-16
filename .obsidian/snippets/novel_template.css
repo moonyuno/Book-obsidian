@@ -1,0 +1,110 @@
+/* ============================================================
+   DANMEI NOVEL NOTE — Header + Controls Styling
+   ============================================================ */
+
+/* ── Meta Info (DataviewJS header) ──────────────────────── */
+.nnote-header {
+  display: flex;
+  gap: 22px;
+  margin: 0 0 20px;
+  align-items: flex-start;
+}
+
+.nnote-cover {
+  width: 120px !important;
+  min-width: 120px !important;
+  max-width: 120px !important;
+  height: 175px !important;
+  max-height: 175px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.55), 3px 3px 10px rgba(0,0,0,0.35) !important;
+  flex-shrink: 0;
+  display: block !important;
+}
+
+.nnote-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 6px;
+}
+
+.nnote-author {
+  font-size: 1rem;
+  color: rgba(235, 190, 190, 0.9);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.nnote-orig {
+  font-size: 0.82rem;
+  color: rgba(200, 155, 155, 0.6);
+  letter-spacing: 0.04em;
+}
+
+.nnote-pairing {
+  font-size: 0.84rem;
+  color: rgba(225, 170, 185, 0.78);
+  margin-top: 2px;
+}
+
+.nnote-pub {
+  font-size: 0.75rem;
+  color: rgba(180, 130, 130, 0.5);
+  margin-top: 2px;
+}
+
+.nnote-genre {
+  font-size: 0.72rem;
+  color: rgba(180, 130, 130, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.nnote-en {
+  font-size: 0.75rem;
+  color: rgba(74, 222, 128, 0.8);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* ── Number input wrapper — constrain width ──────────────── */
+.metadata-input-wrappper,
+.mb-inline-input {
+  display: inline-flex !important;
+  width: auto !important;
+  max-width: 65px !important;
+  min-width: unset !important;
+  vertical-align: middle !important;
+}
+
+/* ── Number input itself ─────────────────────────────────── */
+input[type="number"] {
+  background: hsl(0 40% 14% / .85) !important;
+  border: 1px solid rgba(200, 80, 80, .25) !important;
+  border-radius: 8px !important;
+  color: rgba(230, 185, 185, .9) !important;
+  font-size: .78rem !important;
+  padding: 4px 6px !important;
+  width: 55px !important;
+  max-width: 55px !important;
+  min-width: unset !important;
+  text-align: center !important;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3) !important;
+  box-sizing: border-box !important;
+}
+
+input[type="number"]:focus {
+  border-color: rgba(220, 110, 110, .5) !important;
+  outline: none !important;
+}
+
+/* ── Inline button size ──────────────────────────────────── */
+.mb-button-inline button,
+.inline-button {
+  padding: 4px 12px !important;
+  border-radius: 16px !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+}

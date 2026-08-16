@@ -1,0 +1,44 @@
+/* === Linke Ribbon-Sidebar einfärben (nur der Icon-Streifen) === */
+:root{
+  --rib-start: hsl(278 26% 31% / .92);  /* kühles Violett */
+  --rib-end:   hsl(296 40% 54% / .92);  /* dezentes Pink-Violett */
+  --rib-border: rgba(255,255,255,.10);
+  --rib-fg: #f5f2ff;
+}
+
+/* Nur der schmale Ribbon-Bereich links */
+.side-dock-ribbon.mod-left{
+  background: linear-gradient(180deg, var(--rib-start), var(--rib-end));
+  border-right: 1px solid var(--rib-border);
+  /* keine Breite/Abstände geändert */
+}
+
+/* Inhalte transparent lassen, damit der Verlauf sichtbar bleibt */
+.side-dock-ribbon.mod-left .side-dock-actions,
+.side-dock-ribbon.mod-left .side-dock-settings,
+.side-dock-ribbon.mod-left .side-dock-ribbon-tab{
+  background: transparent;
+}
+
+/* Icons im Ribbon */
+.side-dock-ribbon.mod-left .clickable-icon{
+  color: var(--rib-fg);
+  opacity: .9;
+  transition: filter .15s ease, opacity .15s ease;
+}
+.side-dock-ribbon.mod-left .clickable-icon:hover{
+  opacity: 1;
+  filter: brightness(1.08);
+}
+
+/* Collapse-Button (Pfeil) matchen */
+.side-dock-ribbon.mod-left .workspace-ribbon-collapse-btn,
+.side-dock-ribbon.mod-left .workspace-ribbon-collapse-btn .clickable-icon{
+  color: var(--rib-fg);
+}
+
+/* Falls eingeklappt: gleiche Farbe für die schmale Leiste */
+.side-dock-ribbon.mod-left.is-collapsed{
+  background: linear-gradient(180deg, hsl(278 26% 24% / .95), hsl(296 40% 38% / .95));
+  border-right: 1px solid var(--rib-border);
+}

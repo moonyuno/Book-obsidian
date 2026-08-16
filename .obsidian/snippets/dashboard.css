@@ -1,0 +1,139 @@
+/* ═══════════════════════════════════════════════════════
+   Danmei Dashboard — Stats Row Only  v4.0
+   Card layout handled by DataCards plugin
+   ═══════════════════════════════════════════════════════ */
+
+/* ─── Stats Row ─────────────────────────────────────── */
+.dash-stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.5rem;
+}
+
+.stat-card {
+  flex: 1 1 100px;
+  min-width: 90px;
+  background: linear-gradient(145deg, hsl(2 60% 32% / .88), hsl(0 44% 14% / .92));
+  border: 1px solid rgba(255, 120, 120, .12);
+  border-radius: 12px;
+  padding: 14px 10px;
+  text-align: center;
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, .3),
+    inset 0 1px 0 rgba(255, 255, 255, .06);
+  backdrop-filter: blur(4px);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(180, 40, 40, .3);
+}
+
+.stat-card.accent {
+  background: linear-gradient(145deg, hsl(0 72% 42% / .92), hsl(0 54% 22% / .94));
+  border-color: rgba(255, 100, 100, .25);
+}
+
+.stat-num {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffd4d4;
+  line-height: 1.1;
+}
+
+.stat-card.accent .stat-num {
+  color: #ff9e9e;
+}
+
+.stat-label {
+  display: block;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: rgba(255, 210, 210, .6);
+  margin-top: 4px;
+}
+
+/* ─── Responsive ────────────────────────────────────── */
+@media (max-width: 600px) {
+  .stat-card {
+    min-width: 70px;
+    padding: 10px 6px;
+  }
+  .stat-num {
+    font-size: 1.4rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   Danmei Dashboard — Stats Row Only  v4.0
+   Card layout handled by DataCards plugin
+   ═══════════════════════════════════════════════════════ */
+
+/* ─── Stats Row ─────────────────────────────────────── */
+.dash-stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.5rem;
+}
+
+.stat-card {
+  flex: 1 1 100px;
+  min-width: 90px;
+  background: linear-gradient(145deg, hsl(2 60% 32% / .88), hsl(0 44% 14% / .92));
+  border: 1px solid rgba(255, 120, 120, .12);
+  border-radius: 12px;
+  padding: 14px 10px;
+  text-align: center;
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, .3),
+    inset 0 1px 0 rgba(255, 255, 255, .06);
+  backdrop-filter: blur(4px);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(180, 40, 40, .3);
+}
+
+.stat-card.accent {
+  background: linear-gradient(145deg, hsl(0 72% 42% / .92), hsl(0 54% 22% / .94));
+  border-color: rgba(255, 100, 100, .25);
+}
+
+.stat-num {
+  display: block;
+  font-size: .95rem;
+  font-weight: 700;
+  color: #ffd4d4;
+  line-height: 1.2;
+}
+
+.stat-card.accent .stat-num {
+  color: #ff9e9e;
+}
+
+.stat-label {
+  display: block;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: rgba(255, 210, 210, .6);
+  margin-top: 4px;
+}
+
+/* ─── Responsive ────────────────────────────────────── */
+@media (max-width: 600px) {
+  .stat-card {
+    min-width: 70px;
+    padding: 10px 6px;
+  }
+  .stat-num {
+    font-size: 1.4rem;
+  }
+}

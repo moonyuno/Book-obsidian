@@ -1,0 +1,162 @@
+/* ============================================================
+   DANMEI GLOSSARY — CSS Snippet for Obsidian
+   Compatible with: AnuPpuccin dark theme
+   Aesthetic: Red / dark-red gradient, warm ink tones
+   ============================================================ */
+
+/* ── Banner (DataviewJS-injected) ─────────────────────────── */
+
+.dg-banner {
+  background: linear-gradient(135deg, #3a0a0a 0%, #5c1414 45%, #2d0606 100%);
+  border: 1px solid #8b1a1a;
+  border-radius: 10px;
+  padding: 22px 28px 18px;
+  margin-bottom: 24px;
+  box-shadow:
+    0 4px 24px rgba(139, 26, 26, 0.35),
+    inset 0 1px 0 rgba(255, 120, 120, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.dg-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c0392b, #e74c3c, #c0392b, transparent);
+}
+
+.dg-banner-inner {
+  font-size: 1.45em;
+  font-weight: 700;
+  color: #f5c2c2;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 8px rgba(200, 50, 50, 0.5);
+  margin-bottom: 6px;
+}
+
+.dg-banner-sub {
+  font-size: 0.88em;
+  color: rgba(220, 160, 160, 0.75);
+  letter-spacing: 0.06em;
+  font-style: italic;
+}
+
+/* ── Footer (DataviewJS-injected) ─────────────────────────── */
+
+.dg-footer {
+  margin-top: 36px;
+  padding: 14px 0 6px;
+  border-top: 1px solid rgba(139, 26, 26, 0.4);
+  text-align: center;
+  color: rgba(200, 130, 130, 0.6);
+  font-size: 0.82em;
+  letter-spacing: 0.08em;
+}
+
+.dg-footer em {
+  color: rgba(210, 150, 150, 0.7);
+  font-style: italic;
+}
+
+/* ── Scoped styles (only apply to notes with cssclass: danmei-glossary) ── */
+
+/* Section Headers */
+.danmei-glossary h2 {
+  color: #e8a0a0 !important;
+  border-bottom: 2px solid transparent !important;
+  border-image: linear-gradient(90deg, #8b1a1a, #c0392b88, transparent) 1 !important;
+  padding-bottom: 6px;
+  margin-top: 2em;
+  margin-bottom: 0.9em;
+  font-size: 1.15em;
+  letter-spacing: 0.03em;
+  text-shadow: 0 0 20px rgba(192, 57, 43, 0.2);
+}
+
+/* HR Dividers */
+.danmei-glossary hr {
+  border: none !important;
+  height: 1px !important;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #6b1010 20%,
+    #c0392b 50%,
+    #6b1010 80%,
+    transparent 100%
+  ) !important;
+  margin: 2em auto;
+  opacity: 0.7;
+}
+
+/* Bold text — term labels */
+.danmei-glossary strong {
+  color: #e06b6b !important;
+  font-weight: 700;
+}
+
+/* Paragraph spacing */
+.danmei-glossary p {
+  margin-top: 0.45em;
+  margin-bottom: 0.65em;
+  line-height: 1.75;
+  color: #d4b8b8;
+}
+
+/* Italics — pinyin / cross-references */
+.danmei-glossary em {
+  color: #c9a0b8 !important;
+  font-style: italic;
+}
+
+/* Inline code */
+.danmei-glossary code {
+  background: rgba(139, 26, 26, 0.2) !important;
+  color: #f0a0a0 !important;
+  border: 1px solid rgba(180, 50, 50, 0.3) !important;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.9em;
+}
+
+/* Callout styling */
+.danmei-glossary .callout[data-callout="tip"] {
+  --callout-color: 192, 57, 43;
+  background: rgba(60, 10, 10, 0.45) !important;
+  border-left-color: #c0392b !important;
+}
+
+.danmei-glossary .callout[data-callout="tip"] .callout-title {
+  color: #f0a0a0 !important;
+}
+
+.danmei-glossary .callout[data-callout="tip"] .callout-content {
+  color: #c9a0a0;
+  font-size: 0.9em;
+}
+
+/* List items */
+.danmei-glossary li {
+  margin-bottom: 0.4em;
+  color: #d4b8b8;
+  line-height: 1.7;
+}
+
+.danmei-glossary li::marker {
+  color: #8b1a1a;
+}
+
+/* Selection highlight */
+.danmei-glossary ::selection {
+  background: rgba(192, 57, 43, 0.35);
+  color: #fde8e8;
+}
+
+/* DataviewJS container reset */
+.danmei-glossary .block-language-dataviewjs {
+  margin-bottom: 0 !important;
+}
