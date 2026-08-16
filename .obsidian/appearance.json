@@ -1,0 +1,21 @@
+{
+  "cssTheme": "AnuPpuccin",
+  "enabledCssSnippets": [
+    "card layout folders",
+    "snippet-test",
+    "danmei-glossary",
+    "buttons",
+    "infobox_callout_css",
+    "novel_template",
+    "ribbon_color",
+    "stats",
+    "synopsis",
+    "tab_color",
+    "wiki",
+    "farbverlauf_ordner",
+    "dashboard 2.0",
+    "dashboard",
+    "custom_background"
+  ],
+  "accentColor": ""
+}
