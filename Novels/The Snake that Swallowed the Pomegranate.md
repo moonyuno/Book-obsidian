@@ -16,7 +16,7 @@ genre:
 cover: https://i.imgur.com/ZiBYhwM.jpeg
 started: 
 finished: ""
-statuspub: Completed
+statuspub: ongoing
 en_published: 0
 pairing: "Nain x Ran Gwen x Amon"
 ---
