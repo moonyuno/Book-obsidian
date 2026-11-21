@@ -13,7 +13,7 @@ finished:
 cover: https://sevenseasentertainment.com/wp-content/uploads/2024/10/copper_coins_DN1_coverFRONT.jpg
 banner: https://i.pinimg.com/1200x/a1/d9/a8/a1d9a8001471ca4f6bbd077a9155955c.jpg
 en_published: 3
-statuspub: ongoing
+statuspub: complete
 ---
 ```dataviewjs
 const p = dv.current();
