@@ -20,8 +20,8 @@ finished:
 synopsis: ""
 my_notes: ""
 banner: https://i.pinimg.com/736x/41/68/ce/4168cee567498eb2ae3bd6acb79e084a.jpg
-en_published: 3
-statuspub: ongoing
+en_published: 4
+statuspub: complete
 ---
 ```dataviewjs
 const p = dv.current();
