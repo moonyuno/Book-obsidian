@@ -17,10 +17,10 @@ genre:
 mood: []
 started: 2026-08-19
 finished: ""
-statuspub: Completed
+statuspub: not licensed
 en_published: 0
 pairing: Xi Jianglan x Sheng Jiao
-Cover: https://cdn.novelupdates.com/images/2025/06/After-the-Villain-Lost-His-Cultivation.jpg
+cover: https://cdn.novelupdates.com/images/2025/06/After-the-Villain-Lost-His-Cultivation.jpg
 ---
 
 
