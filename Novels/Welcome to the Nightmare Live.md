@@ -16,7 +16,7 @@ cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAaPmKqVMwl4carSEY
 mood: []
 started: 
 finished: ""
-statuspub: Ongoing (CN, text under revision)
+statuspub: not licensed
 en_published: 0
 pairing: "Wen Jianyan x ???"
 ---
