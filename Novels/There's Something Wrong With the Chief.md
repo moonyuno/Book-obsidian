@@ -11,8 +11,8 @@ cover: https://sevenseasentertainment.com/wp-content/uploads/2024/10/govSickDN1_
 mood: [emotional, tense, dark, adventurous]
 started: 
 finished: ""
-statuspub: ongoing
-en_published: 3
+statuspub: complete
+en_published: 4
 
 ---
 
