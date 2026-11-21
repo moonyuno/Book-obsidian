@@ -20,7 +20,7 @@ has_manhua: false
 synopsis: ""
 my_notes: ""
 banner: https://i.pinimg.com/1200x/5b/9d/53/5b9d538c34c725e217283fe9f6bde249.jpg
-en_published: 5
+en_published: 6
 statuspub: ongoing
 ---
 
