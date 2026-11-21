@@ -16,10 +16,10 @@ genre:
 mood: []
 started: 
 finished: ""
-statuspub: Completed
+statuspub: not licensed
 en_published: 0
 pairing: "Rong Yu x Wei Jingtan"
-Cover: https://cdn.novelupdates.com/images/2025/02/The-Vicious-Cannon-Fodder-Doesnt-Want-to-be-a-Heartthrob-Novel-Transmigration.png
+cover: ""
 ---
 
 
