@@ -17,10 +17,10 @@ genre:
 mood: []
 started: 
 finished: ""
-statuspub: Completed
+statuspub: not licensed
 en_published: 0
 pairing: "Fu Pianlou x Xie Zheng"
-Cover: ""
+cover: "https://daosearch.io/img/cover/c740f80f79feb544c504/360/aHR0cHM6Ly9pNi1zdGF0aWMuamp3eGMubmV0L3RtcC9iYWNrZW5kL2F1dGhvcnNwYWNlL3MxLzUzLzUyMjkxLzUyMjkwNjgvMjAyMzEyMTYwNDU2NTBfMzAwXzQyMC5qcGc.jpg"
 ---
 
 
