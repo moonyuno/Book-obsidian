@@ -17,7 +17,7 @@ genre:
 mood: []
 started: ""
 finished: ""
-statuspub: Completed
+statuspub: not licensed
 en_published: 0
 pairing: "Jing Beiyuan x Wu Xi"
 cover: "https://lordseventhby7.carrd.co/assets/images/gallery01/cd0e830a_original.jpg?v=117caabd"
