@@ -1,0 +1,1696 @@
+/* ============================================================
+   CLASSICS LIBRARY -- v2
+   Dark antique library mode for Classics only
+   ============================================================ */
+
+
+/* ============================================================
+   1. CLASSICS COLOUR SYSTEM
+   ============================================================ */
+
+body:has(.workspace-leaf.mod-active .classics-dashboard),
+body:has(.workspace-leaf.mod-active .classic-note) {
+
+  --cl-ink: #e8dfc8;
+  --cl-muted: #a89d82;
+
+  --cl-gold: #c3a76a;
+  --cl-gold-light: #dfca91;
+  --cl-gold-soft: #9d8758;
+
+  --cl-green: #35483b;
+  --cl-green-light: #52634e;
+  --cl-green-deep: #202b23;
+
+  --cl-brown: #493a2c;
+  --cl-brown-light: #6b5640;
+
+  --cl-deep: #121813;
+
+  --cl-panel: rgba(25, 30, 24, 0.88);
+  --cl-panel-soft: rgba(35, 39, 30, 0.72);
+
+  --cl-border: rgba(203, 180, 123, 0.18);
+
+  --interactive-accent: #9e8657;
+  --interactive-accent-hover: #b49a66;
+
+  --text-accent: #cbb47b;
+  --text-accent-hover: #e0ca92;
+}
+
+
+/* ============================================================
+   2. WHOLE WORKSPACE
+   ============================================================ */
+
+body:has(.workspace-leaf.mod-active .classics-dashboard) .app-container,
+body:has(.workspace-leaf.mod-active .classic-note) .app-container {
+
+  background:
+
+    radial-gradient(
+      circle at 18% 10%,
+      rgba(104, 91, 57, 0.24),
+      transparent 33%
+    ),
+
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(52, 79, 57, 0.22),
+      transparent 38%
+    ),
+
+    linear-gradient(
+      135deg,
+      #121712 0%,
+      #1c2119 35%,
+      #211c16 70%,
+      #111510 100%
+    ) !important;
+
+  background-size: cover !important;
+}
+
+
+/* Remove the normal Danmei background influence */
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.horizontal-main-container,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.horizontal-main-container {
+
+  background:
+    rgba(10, 13, 10, 0.18) !important;
+
+  backdrop-filter: none !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-split.mod-root,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-split.mod-root {
+
+  background: transparent !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-tabs,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-tabs {
+
+  background:
+    rgba(15, 18, 14, 0.35) !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-leaf-content,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-leaf-content {
+
+  background:
+    rgba(20, 24, 19, 0.42) !important;
+}
+
+
+/* ============================================================
+   3. TABS
+   Overrides your global red tab CSS
+   ============================================================ */
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-tab-header,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-tab-header {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(69, 82, 61, 0.96),
+      rgba(52, 47, 34, 0.96)
+    ) !important;
+
+  color:
+    #ddd3b8 !important;
+
+  box-shadow:
+    inset 0 0 0 1px
+    rgba(218, 196, 139, 0.08) !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-tab-header:hover,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-tab-header:hover {
+
+  filter:
+    brightness(1.08);
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-tab-header.is-active,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-tab-header.is-active {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(89, 101, 73, 0.98),
+      rgba(80, 66, 45, 0.98)
+    ) !important;
+
+  box-shadow:
+
+    inset 0 0 0 1px
+    rgba(212, 187, 120, 0.30),
+
+    0 2px 10px
+    rgba(0, 0, 0, 0.40)
+
+    !important;
+
+  color:
+    #f1e5c6 !important;
+}
+
+
+/* ============================================================
+   4. LEFT RIBBON
+   ============================================================ */
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.side-dock-ribbon.mod-left,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.side-dock-ribbon.mod-left,
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-ribbon.mod-left,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-ribbon.mod-left {
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(53, 73, 58, 0.96),
+      rgba(60, 47, 34, 0.97)
+    ) !important;
+
+  border-right:
+    1px solid
+    rgba(210, 189, 132, 0.12)
+    !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-ribbon .clickable-icon,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-ribbon .clickable-icon {
+
+  color:
+    #ddd2b6 !important;
+}
+
+
+/* ============================================================
+   5. FILE EXPLORER / FOLDERS
+   ============================================================ */
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.nav-folder,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.nav-folder {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(69, 87, 68, 0.86),
+      rgba(57, 45, 32, 0.90)
+    ) !important;
+
+  border-radius:
+    9px;
+
+  --nav-item-color:
+    #e3d9bf;
+
+  --nav-item-color-hover:
+    #fff5d9;
+
+  --nav-item-color-active:
+    #fff5d9;
+
+  --nav-collapse-icon-color:
+    #d7caa8;
+
+  color:
+    #e3d9bf !important;
+
+  box-shadow:
+
+    inset 0 1px 5px
+    rgba(0, 0, 0, 0.22),
+
+    inset 0 0 0 1px
+    rgba(220, 196, 138, 0.06)
+
+    !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.nav-folder:hover,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.nav-folder:hover {
+
+  filter:
+    brightness(1.08);
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.nav-folder-title,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.nav-folder-title,
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.nav-folder-title-content,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.nav-folder-title-content {
+
+  color:
+    #e3d9bf !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.nav-file-title,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.nav-file-title {
+
+  color:
+    #bdb298 !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.nav-file-title:hover,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.nav-file-title:hover {
+
+  background:
+    rgba(184, 157, 98, 0.11) !important;
+
+  color:
+    #eee1c0 !important;
+}
+
+
+/* ============================================================
+   6. TYPOGRAPHY
+   ============================================================ */
+
+.classics-dashboard,
+.classic-note {
+
+  --text-normal:
+    #ded5bd;
+
+  --text-muted:
+    #978f7a;
+
+  --text-faint:
+    #746d5e;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+}
+
+
+.classics-dashboard h1,
+.classics-dashboard h2,
+.classics-dashboard h3,
+
+.classic-note h1,
+.classic-note h2,
+.classic-note h3 {
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  color:
+    #d9c58d !important;
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    0.025em;
+}
+
+
+.classics-dashboard h2,
+.classic-note h2 {
+
+  border-bottom:
+    1px solid
+    rgba(197, 172, 107, 0.18);
+
+  padding-bottom:
+    0.35rem;
+}
+
+
+.classics-dashboard hr,
+.classic-note hr {
+
+  border:
+    0;
+
+  height:
+    1px;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(199, 176, 113, 0.38),
+      transparent
+    );
+
+  margin:
+    1.6rem 0;
+}
+
+
+/* ============================================================
+   7. DASHBOARD HERO
+   ============================================================ */
+
+.cl-hero {
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  margin:
+    0.6rem 0 1.5rem;
+
+  padding:
+    38px 34px;
+
+  border-radius:
+    14px;
+
+  border:
+    1px solid
+    rgba(203, 178, 113, 0.20);
+
+  background:
+
+    radial-gradient(
+      circle at 82% 22%,
+      rgba(178, 151, 88, 0.13),
+      transparent 35%
+    ),
+
+    linear-gradient(
+      135deg,
+      rgba(51, 65, 49, 0.93),
+      rgba(42, 37, 28, 0.95)
+    );
+
+  box-shadow:
+
+    0 8px 28px
+    rgba(0, 0, 0, 0.36),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.035);
+}
+
+
+.cl-hero::after {
+
+  content:
+    "❦";
+
+  position:
+    absolute;
+
+  right:
+    30px;
+
+  top:
+    13px;
+
+  font-size:
+    6rem;
+
+  line-height:
+    1;
+
+  color:
+    rgba(215, 190, 128, 0.08);
+
+  transform:
+    rotate(-10deg);
+
+  pointer-events:
+    none;
+}
+
+
+.cl-kicker {
+
+  color:
+    #a99564;
+
+  font-family:
+    system-ui,
+    sans-serif;
+
+  font-size:
+    0.64rem;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    0.24em;
+
+  text-transform:
+    uppercase;
+
+  margin-bottom:
+    7px;
+}
+
+
+.cl-hero-title {
+
+  color:
+    #efe2bd;
+
+  font-size:
+    clamp(2rem, 5vw, 3.6rem);
+
+  line-height:
+    1;
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    0.02em;
+}
+
+
+.cl-hero-subtitle {
+
+  margin-top:
+    12px;
+
+  color:
+    rgba(225, 213, 183, 0.62);
+
+  font-style:
+    italic;
+
+  font-size:
+    0.95rem;
+}
+
+
+/* ============================================================
+   8. DASHBOARD STATS
+   ============================================================ */
+
+.cl-stats {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    11px;
+
+  margin:
+    1rem 0 1.6rem;
+}
+
+
+.cl-stat-card {
+
+  flex:
+    1 1 105px;
+
+  min-width:
+    90px;
+
+  padding:
+    13px 10px;
+
+  text-align:
+    center;
+
+  border-radius:
+    10px;
+
+  border:
+    1px solid
+    rgba(204, 180, 118, 0.13);
+
+  background:
+
+    linear-gradient(
+      145deg,
+      rgba(54, 67, 50, 0.84),
+      rgba(42, 36, 27, 0.88)
+    );
+
+  box-shadow:
+
+    0 4px 13px
+    rgba(0, 0, 0, 0.25),
+
+    inset 0 1px
+    rgba(255, 255, 255, 0.025);
+
+  transition:
+
+    transform 0.15s ease,
+
+    filter 0.15s ease;
+}
+
+
+.cl-stat-card:hover {
+
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.06);
+}
+
+
+.cl-stat-card.accent {
+
+  background:
+
+    linear-gradient(
+      145deg,
+      rgba(78, 91, 64, 0.92),
+      rgba(69, 53, 35, 0.94)
+    );
+
+  border-color:
+    rgba(213, 187, 118, 0.22);
+}
+
+
+.cl-stat-num {
+
+  display:
+    block;
+
+  color:
+    #e5d29b;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    1rem;
+
+  font-weight:
+    600;
+}
+
+
+.cl-stat-label {
+
+  display:
+    block;
+
+  margin-top:
+    4px;
+
+  color:
+    rgba(220, 207, 173, 0.50);
+
+  font-family:
+    system-ui,
+    sans-serif;
+
+  font-size:
+    0.60rem;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    0.11em;
+
+  text-transform:
+    uppercase;
+}
+
+
+/* ============================================================
+   9. BOOK GRID
+   ============================================================ */
+
+.cl-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap:
+    15px;
+
+  margin:
+    0.9rem 0 2rem;
+}
+
+
+.cl-card {
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  min-width:
+    0;
+
+  border-radius:
+    8px;
+
+  border:
+    1px solid
+    rgba(207, 184, 124, 0.12);
+
+  background:
+
+    linear-gradient(
+      160deg,
+      rgba(45, 54, 42, 0.94),
+      rgba(37, 32, 25, 0.97)
+    );
+
+  box-shadow:
+    0 4px 15px
+    rgba(0, 0, 0, 0.34);
+
+  transition:
+
+    transform 0.18s ease,
+
+    box-shadow 0.18s ease,
+
+    border-color 0.18s ease;
+}
+
+
+.cl-card:hover {
+
+  transform:
+    translateY(-4px);
+
+  border-color:
+    rgba(209, 183, 112, 0.28);
+
+  box-shadow:
+    0 10px 25px
+    rgba(0, 0, 0, 0.42);
+}
+
+
+.cl-card::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  z-index:
+    3;
+
+  top:
+    0;
+
+  left:
+    0;
+
+  right:
+    0;
+
+  height:
+    2px;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(208, 181, 108, 0.68),
+      transparent
+    );
+}
+
+
+/* ============================================================
+   10. COVERS
+   ============================================================ */
+
+.cl-cover-wrap {
+
+  width:
+    100%;
+
+  height:
+    215px;
+
+  overflow:
+    hidden;
+
+  background:
+    #171a15;
+}
+
+
+.cl-cover-link {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    100%;
+}
+
+
+.cl-cover {
+
+  display:
+    block !important;
+
+  width:
+    100% !important;
+
+  min-width:
+    100% !important;
+
+  max-width:
+    none !important;
+
+  height:
+    215px !important;
+
+  max-height:
+    215px !important;
+
+  object-fit:
+    cover !important;
+
+  border-radius:
+    0 !important;
+
+  transition:
+
+    transform 0.35s ease,
+
+    filter 0.35s ease;
+
+  filter:
+
+    saturate(0.86)
+
+    contrast(0.97);
+}
+
+
+.cl-card:hover .cl-cover {
+
+  transform:
+    scale(1.025);
+
+  filter:
+
+    saturate(0.95)
+
+    contrast(1);
+}
+
+
+/* ============================================================
+   11. YEAR BADGE
+   ============================================================ */
+
+.cl-year-badge {
+
+  position:
+    absolute;
+
+  z-index:
+    4;
+
+  top:
+    8px;
+
+  right:
+    8px;
+
+  padding:
+    4px 8px;
+
+  border-radius:
+    10px;
+
+  border:
+    1px solid
+    rgba(246, 224, 169, 0.26);
+
+  background:
+    rgba(54, 47, 31, 0.88);
+
+  color:
+    #dfc887;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    0.64rem;
+
+  box-shadow:
+    0 2px 8px
+    rgba(0, 0, 0, 0.30);
+
+  backdrop-filter:
+    blur(4px);
+}
+
+
+/* ============================================================
+   12. BOOK CARD INFO
+   ============================================================ */
+
+.cl-info {
+
+  padding:
+    11px 12px 13px;
+}
+
+
+.cl-title {
+
+  display:
+    -webkit-box;
+
+  overflow:
+    hidden;
+
+  margin-bottom:
+    8px;
+
+  color:
+    #e9debf !important;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    0.90rem !important;
+
+  font-weight:
+    600 !important;
+
+  line-height:
+    1.25;
+
+  text-decoration:
+    none !important;
+
+  -webkit-line-clamp:
+    2;
+
+  -webkit-box-orient:
+    vertical;
+}
+
+
+.cl-title:hover {
+
+  color:
+    #f6e9c5 !important;
+}
+
+
+.cl-field {
+
+  margin-top:
+    5px;
+}
+
+
+.cl-label {
+
+  color:
+    rgba(212, 196, 159, 0.37);
+
+  font-family:
+    system-ui,
+    sans-serif;
+
+  font-size:
+    0.54rem;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    0.11em;
+
+  text-transform:
+    uppercase;
+}
+
+
+.cl-value {
+
+  margin-top:
+    1px;
+
+  color:
+    rgba(232, 221, 194, 0.72);
+
+  font-family:
+    system-ui,
+    sans-serif;
+
+  font-size:
+    0.72rem;
+
+  line-height:
+    1.35;
+}
+
+
+/* ============================================================
+   13. PROGRESS BAR
+   ============================================================ */
+
+.cl-progress-wrap {
+
+  height:
+    4px;
+
+  overflow:
+    hidden;
+
+  margin-top:
+    5px;
+
+  border-radius:
+    3px;
+
+  background:
+    rgba(255, 255, 255, 0.07);
+}
+
+
+.cl-progress-bar {
+
+  height:
+    100%;
+
+  min-width:
+    2px;
+
+  border-radius:
+    inherit;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      #63775d,
+      #b2985e
+    );
+
+  transition:
+    width 0.35s ease;
+}
+
+
+/* ============================================================
+   14. EMPTY SECTION
+   ============================================================ */
+
+.cl-empty {
+
+  margin:
+    0.5rem 0 1.4rem;
+
+  color:
+    rgba(214, 202, 171, 0.38);
+
+  font-style:
+    italic;
+}
+
+
+/* ============================================================
+   15. INDIVIDUAL CLASSIC NOTE HEADER
+   ============================================================ */
+
+.cl-note-header {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    145px 1fr;
+
+  gap:
+    24px;
+
+  align-items:
+    start;
+
+  margin:
+    0.8rem 0 1.7rem;
+
+  padding:
+    22px;
+
+  border-radius:
+    12px;
+
+  border:
+    1px solid
+    rgba(204, 179, 113, 0.15);
+
+  background:
+
+    linear-gradient(
+      145deg,
+      rgba(49, 60, 46, 0.78),
+      rgba(42, 35, 26, 0.83)
+    );
+}
+
+
+.cl-note-cover {
+
+  width:
+    145px !important;
+
+  max-width:
+    145px !important;
+
+  border-radius:
+    5px !important;
+
+  box-shadow:
+    0 6px 18px
+    rgba(0, 0, 0, 0.42);
+}
+
+
+.cl-note-author {
+
+  color:
+    #d3bd7c;
+
+  font-size:
+    1.05rem;
+
+  margin-bottom:
+    8px;
+}
+
+
+.cl-note-meta-line {
+
+  margin-top:
+    5px;
+
+  color:
+    rgba(225, 214, 184, 0.64);
+
+  font-family:
+    system-ui,
+    sans-serif;
+
+  font-size:
+    0.78rem;
+}
+
+
+/* ============================================================
+   16. META BIND INPUTS
+   ============================================================ */
+
+.classics-dashboard
+.meta-bind-plugin-select-input-wrapper,
+
+.classic-note
+.meta-bind-plugin-select-input-wrapper,
+
+.classics-dashboard input,
+
+.classic-note input {
+
+  border-color:
+    rgba(199, 176, 111, 0.18) !important;
+
+  background:
+    rgba(34, 39, 31, 0.75) !important;
+
+  color:
+    #ddd2b5 !important;
+}
+
+
+/* ============================================================
+   17. CLASSICS SYNOPSIS
+
+   IMPORTANT:
+   This intentionally overrides your GLOBAL red synopsis.css
+   whenever a note with cssclass "classic-note" is active.
+
+   You can continue using:
+
+   > [!synopsis] Synopsis
+
+   ============================================================ */
+
+
+/* Callout body */
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"] {
+
+  --callout-color:
+    190, 169, 108 !important;
+
+  position:
+    relative !important;
+
+  overflow:
+    hidden !important;
+
+  margin:
+    1.8rem 0 !important;
+
+  padding:
+    0 !important;
+
+  border:
+    1px solid
+    rgba(205, 181, 112, 0.24)
+    !important;
+
+  border-radius:
+    6px !important;
+
+  background:
+
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(190, 166, 99, 0.10),
+      transparent 48%
+    ),
+
+    linear-gradient(
+      155deg,
+      rgba(48, 62, 46, 0.97),
+      rgba(34, 31, 23, 0.98)
+    )
+
+    !important;
+
+  box-shadow:
+
+    0 0 0 1px
+    rgba(199, 176, 109, 0.22),
+
+    0 0 0 4px
+    rgba(20, 25, 19, 0.96),
+
+    0 0 0 5px
+    rgba(194, 170, 105, 0.12),
+
+    0 9px 30px
+    rgba(0, 0, 0, 0.42)
+
+    !important;
+}
+
+
+/* Kill the RED pseudo-elements from synopsis.css */
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]::before,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]::after {
+
+  content:
+    "❦" !important;
+
+  position:
+    absolute !important;
+
+  z-index:
+    2 !important;
+
+  color:
+    rgba(210, 187, 120, 0.34) !important;
+
+  font-size:
+    1.3rem !important;
+
+  line-height:
+    1 !important;
+
+  pointer-events:
+    none !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]::before {
+
+  top:
+    11px !important;
+
+  left:
+    15px !important;
+
+  bottom:
+    auto !important;
+
+  right:
+    auto !important;
+
+  transform:
+    scaleX(-1) !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]::after {
+
+  right:
+    15px !important;
+
+  bottom:
+    11px !important;
+
+  top:
+    auto !important;
+
+  left:
+    auto !important;
+
+  transform:
+    none !important;
+}
+
+
+/* Hide default Obsidian icon */
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-icon {
+
+  display:
+    none !important;
+}
+
+
+/* Synopsis title row */
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-title {
+
+  display:
+    flex !important;
+
+  align-items:
+    center !important;
+
+  justify-content:
+    center !important;
+
+  gap:
+    12px !important;
+
+  padding:
+    19px 30px 14px !important;
+
+  background:
+    transparent !important;
+
+  border-bottom:
+    1px solid
+    rgba(204, 180, 113, 0.15)
+    !important;
+
+  text-align:
+    center !important;
+}
+
+
+/* Synopsis heading */
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-title-inner {
+
+  display:
+    block !important;
+
+  color:
+    #e0cc93 !important;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif !important;
+
+  font-size:
+    1.12em !important;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    0.045em !important;
+
+  text-align:
+    center !important;
+
+  font-style:
+    normal !important;
+}
+
+
+/* Replace red star ornament */
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-title::before {
+
+  content:
+    "·  ❦  ·" !important;
+
+  display:
+    block !important;
+
+  margin:
+    0 !important;
+
+  color:
+    rgba(206, 183, 116, 0.38)
+    !important;
+
+  font-family:
+    Georgia,
+    serif !important;
+
+  font-size:
+    0.72em !important;
+
+  letter-spacing:
+    0.12em !important;
+
+  font-style:
+    normal !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-title::after {
+
+  content:
+    "·  ❦  ·" !important;
+
+  display:
+    block !important;
+
+  margin:
+    0 !important;
+
+  color:
+    rgba(206, 183, 116, 0.38)
+    !important;
+
+  font-family:
+    Georgia,
+    serif !important;
+
+  font-size:
+    0.72em !important;
+
+  letter-spacing:
+    0.12em !important;
+
+  font-style:
+    normal !important;
+}
+
+
+/* Synopsis content */
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-content {
+
+  padding:
+    18px 28px 24px !important;
+
+  background:
+    transparent !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-content p {
+
+  margin:
+    0 0 0.8em 0 !important;
+
+  color:
+    rgba(229, 218, 189, 0.84)
+    !important;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif !important;
+
+  font-size:
+    0.90em !important;
+
+  line-height:
+    1.85 !important;
+
+  text-align:
+    justify !important;
+
+  text-indent:
+    1.2em !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-content p:first-child {
+
+  text-indent:
+    0 !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-content p:last-child {
+
+  margin-bottom:
+    0 !important;
+}
+
+
+/* Closing ornament */
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.callout[data-callout="synopsis"]
+.callout-content::after {
+
+  content:
+    "❦" !important;
+
+  display:
+    block !important;
+
+  margin-top:
+    16px !important;
+
+  color:
+    rgba(202, 178, 108, 0.30)
+    !important;
+
+  font-size:
+    1rem !important;
+
+  text-align:
+    center !important;
+}
+
+
+/* ============================================================
+   18. MOBILE
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+  .cl-grid {
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .cl-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap:
+      11px;
+  }
+
+
+  .cl-cover-wrap,
+  .cl-cover {
+
+    height:
+      185px !important;
+
+    max-height:
+      185px !important;
+  }
+
+
+  .cl-hero {
+
+    padding:
+      28px 22px;
+  }
+
+
+  .cl-note-header {
+
+    grid-template-columns:
+      105px 1fr;
+
+    gap:
+      16px;
+
+    padding:
+      16px;
+  }
+
+
+  .cl-note-cover {
+
+    width:
+      105px !important;
+
+    max-width:
+      105px !important;
+  }
+
+
+  .cl-stat-card {
+
+    min-width:
+      75px;
+
+    padding:
+      10px 7px;
+  }
+
+
+  body:has(.workspace-leaf.mod-active .classic-note)
+  .callout[data-callout="synopsis"]
+  .callout-content {
+
+    padding:
+      16px 20px 21px !important;
+  }
+
+
+  body:has(.workspace-leaf.mod-active .classic-note)
+  .callout[data-callout="synopsis"]
+  .callout-title {
+
+    padding:
+      17px 22px 12px !important;
+
+    gap:
+      8px !important;
+  }
+}

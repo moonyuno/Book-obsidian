@@ -14,7 +14,7 @@ finished: 2026-01-05
 volumes: 5/5
 banner: https://i.pinimg.com/736x/20/eb/ad/20ebad53b34027d5349f7a57fe0947dc.jpg
 en_published: 5
-statuspub: finished
+statuspub: complete
 ---
 
 ```dataviewjs

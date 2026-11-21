@@ -2,19 +2,27 @@
 title: "{{Case File Compendium}}"
 author: Rou Bao Bu Chi Rou
 original_title: ""
-status: Unread
+status: Reading
 rating:
 tags: []
 cover: https://m.media-amazon.com/images/I/81XxFXlIoaL._SL1500_.jpg
-volumes_read: 0
+volumes_read: 7
 volumes_total: 10
 translation: ""
 pairing: ""
 themes: []
 has_donghua: false
 has_manhua: false
-genre: [Danmei, Modern, Mystery, Thriller] 
-mood: [dark, mysterious, tense, emotional]
+genre:
+  - Danmei
+  - Modern
+  - Mystery
+  - Thriller
+mood:
+  - dark
+  - mysterious
+  - tense
+  - emotional
 started:
 finished:
 synopsis: ""

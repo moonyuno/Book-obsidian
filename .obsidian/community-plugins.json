@@ -12,5 +12,7 @@
   "templater-obsidian",
   "obsidian-excalidraw-plugin",
   "simple-banner",
-  "data-cards"
+  "data-cards",
+  "quickadd",
+  "cmdr"
 ]

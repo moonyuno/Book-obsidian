@@ -2,11 +2,11 @@
 title: "{{Remnants of Filth}}"
 author: Rou Bao Bu Chi Rou
 original_title: ""
-status: Reading
+status: Finished
 rating: ⭐⭐⭐⭐
 tags: []
 cover: https://m.media-amazon.com/images/I/91Zawa5yTPL._SL1500_.jpg
-volumes_read: 5
+volumes_read: 7
 volumes_total: 7
 translation: ""
 pairing: ""

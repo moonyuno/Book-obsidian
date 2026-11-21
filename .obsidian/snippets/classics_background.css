@@ -1,0 +1,61 @@
+/* ============================================================
+   CLASSICS BACKGROUND ONLY
+   ============================================================ */
+
+body:has(.workspace-leaf.mod-active .classics-dashboard) .app-container,
+body:has(.workspace-leaf.mod-active .classic-note) .app-container {
+  background:
+    linear-gradient(
+      rgba(10, 14, 10, 0.42),
+      rgba(10, 12, 9, 0.56)
+    ),
+    url ("https://i.imgur.com/bQMWuTZ.jpeg" !important;
+
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+
+
+/* Darken the image slightly behind the workspace */
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.horizontal-main-container,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.horizontal-main-container {
+  background: rgba(10, 13, 10, 0.10) !important;
+
+  backdrop-filter:
+    brightness(0.72)
+    blur(1px) !important;
+}
+
+
+/* Keep the main panes translucent */
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-split.mod-root,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-split.mod-root {
+  background: transparent !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-tabs,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-tabs {
+  background: rgba(15, 18, 14, 0.28) !important;
+}
+
+
+body:has(.workspace-leaf.mod-active .classics-dashboard)
+.workspace-leaf-content,
+
+body:has(.workspace-leaf.mod-active .classic-note)
+.workspace-leaf-content {
+  background: rgba(18, 22, 17, 0.38) !important;
+}

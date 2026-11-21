@@ -15,7 +15,10 @@
     "farbverlauf_ordner",
     "dashboard 2.0",
     "dashboard",
-    "custom_background"
+    "custom_background",
+    "classics",
+    "classics_background"
   ],
-  "accentColor": ""
+  "accentColor": "",
+  "showRibbon": true
 }

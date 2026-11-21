@@ -1,20 +1,26 @@
 ---
-title: ""
-author: ""
-original_title: ""
+title: "{{TITLE}}"
+author: "{{VALUE:author|label:Author|optional}}"
+original_title: "{{VALUE:originalTitle|label:Original title|optional}}"
+pairing: "{{VALUE:pairing|label:Pairing|optional}}"
+
 status: Unread
 rating: ""
+
 volumes_read: 0
-volumes_total: 0
+volumes_total: {{VALUE:volumesTotal|label:Total volumes|type:number|optional}}
+
 genre:
   - Danmei
-cover: ""
-mood: []
-started: 
-finished: ""
-statuspub:
-en_published: 0
 
+cover: "{{VALUE:cover|label:Cover URL|optional}}"
+mood: []
+
+started:
+finished:
+
+statuspub: "{{VALUE:Ongoing,Complete,Hiatus|name:publicationStatus|label:Publication status|optional}}"
+en_published: {{VALUE:enPublished|label:English volumes published|type:number|optional}}
 ---
 
 ```dataviewjs
