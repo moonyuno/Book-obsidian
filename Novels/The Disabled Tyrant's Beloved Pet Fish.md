@@ -28,7 +28,7 @@ synopsis: ""
 my_notes: ""
 banner: https://i.pinimg.com/1200x/7f/ac/f2/7facf26783d95983838d281709bebc8f.jpg
 en_published: 4
-statuspub: finished
+statuspub: complete
 ---
 
 ```dataviewjs
