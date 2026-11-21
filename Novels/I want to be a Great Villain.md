@@ -22,7 +22,7 @@ started: ""
 finished: ""
 statuspub: Completed
 pairing: "Wang Yi x Qin Xian"
-cover: ""
+cover: "https://funimecity.com/cdn/shop/files/i-want-to-be-a-big-baddie-vol1-the-comic-manhua-bilibili-funimecity-738116.jpg?v=1729609709"
 ---
 
 
