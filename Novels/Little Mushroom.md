@@ -19,8 +19,8 @@ finished:
 synopsis: ""
 my_notes: ""
 banner: https://i.pinimg.com/1200x/48/ff/19/48ff191ec07197e51e8a70d204e78506.jpg
-en_published: 0
-statuspub: upcoming
+en_published: 1
+statuspub: ongoing
 ---
 
 ```dataviewjs
