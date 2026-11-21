@@ -11,8 +11,8 @@ cover: https://sevenseasentertainment.com/wp-content/uploads/2024/10/TWCDSPvol1_
 mood: [lighthearted, funny, adventurous]
 started: 
 finished: ""
-statuspub: ongoing
-en_published: 2
+statuspub: complete
+en_published: 3
 
 ---
 
