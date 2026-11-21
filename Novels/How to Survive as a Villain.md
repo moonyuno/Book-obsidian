@@ -11,8 +11,8 @@ cover: https://www.danmeinews.com/wp-content/uploads/2024/01/htsv1-cover1.png
 mood: [funny, adventurous, tense, emotional]
 started: 
 finished: ""
-statuspub: ongoing
-en_published: 2
+statuspub: complete
+en_published: 3
 
 ---
 
