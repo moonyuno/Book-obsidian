@@ -29,7 +29,7 @@ synopsis: ""
 my_notes: ""
 volumes: 0/10
 banner: https://i.pinimg.com/736x/62/e7/77/62e7776a662744b70a81f7bd191f6518.jpg
-en_published: 8
+en_published: 9
 statuspub: ongoing
 ---
 
