@@ -17,10 +17,10 @@ genre:
 mood: []
 started: 2026-08-19
 finished: ""
-statuspub: Completed
+statuspub: not licensed
 en_published: 0
 pairing: Lu Jingyun x Chu Cimu
-Cover: https://cdn.novelupdates.com/images/2026/02/After-Transmigrating-I-Was-Forced-to-Prevent-the-Villains-Blackening.jpg
+cover: https://cdn.novelupdates.com/images/2026/02/After-Transmigrating-I-Was-Forced-to-Prevent-the-Villains-Blackening.jpg
 ---
 
 
