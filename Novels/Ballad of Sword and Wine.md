@@ -10,8 +10,8 @@ genre: [Danmei, Historical, Political, Wuxia]
 mood: [dark, emotional, tense, mysterious]
 started:
 finished:
-en_published: 7
-statuspub: ongoing
+en_published: 8
+statuspub: complete
 banner: https://i.imgur.com/6amilOc.png
 cover: https://images.thalia.media/-/BF2000-2000/39e69429247547a09402abe46c631f8d/ballad-of-sword-and-wine-qiang-jin-jiu-novel-vol-1-taschenbuch-tang-jiu-qing-englisch.jpeg
 ---
