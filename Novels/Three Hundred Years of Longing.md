@@ -12,8 +12,8 @@ started:
 finished:
 cover: https://m.media-amazon.com/images/I/81aW05lKVFL._SL1500_.jpg
 banner: https://i.pinimg.com/1200x/e0/aa/6d/e0aa6dc1dfd728b1e988f94bea460dbc.jpg
-en_published: 3
-statuspub: ongoing
+en_published: 4
+statuspub: complete
 ---
 
 ```dataviewjs
