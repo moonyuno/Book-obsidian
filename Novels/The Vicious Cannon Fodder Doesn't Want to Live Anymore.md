@@ -19,7 +19,7 @@ finished: ""
 statuspub: not licensed
 en_published: 0
 pairing: "Rong Yu x Wei Jingtan"
-cover: ""
+cover: "https://images.weserv.nl/?url=wx3.sinaimg.cn/middle/006Dsvhely1iel8paiq2wj31c92dshdw.jpg"
 ---
 
 
