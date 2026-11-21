@@ -22,7 +22,7 @@ my_notes: ""
 volumes: 0/2
 banner: https://i.pinimg.com/736x/ee/8b/f7/ee8bf752c093711ea17363835ade3cf7.jpg
 en_published: 0
-statuspub: not licensed
+statuspub: upcoming
 ---
 
 ```dataviewjs
