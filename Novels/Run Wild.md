@@ -12,8 +12,8 @@ started:
 finished:
 cover: https://sevenseasentertainment.com/wp-content/uploads/2024/06/runWildDN1_coverFRONT.jpg   
 banner: https://i.pinimg.com/736x/cd/5a/23/cd5a2341356ccdca08ac082e9fa6662c.jpg
-en_published: 5
-statuspub: ongoing
+en_published: 6
+statuspub: complete
 ---
 
 ```dataviewjs
