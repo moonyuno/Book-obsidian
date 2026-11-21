@@ -18,7 +18,7 @@ genre:
 mood: []
 started: ""
 finished: ""
-statuspub: Completed
+statuspub: ongoing
 en_published: 3
 pairing: "Sheng Lingyuan x Xuan Ji"
 cover: https://cdn.novelupdates.com/images/2025/12/Lie-Huo-Jiao-Chou.jpeg
