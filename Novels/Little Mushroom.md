@@ -5,7 +5,7 @@ original_title: ""
 status: Unread
 rating:
 tags: []
-cover: https://images.thalia.media/-/BF2000-2000/2fcf2d5b75754baea83237b394f0f156/little-mushroom-wrong-but-still-right-1-taschenbuch-yishisizhou.png
+cover: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1775258137i/239780170.jpg"
 volumes_read: 0
 volumes_total: 2
 translation: ""
