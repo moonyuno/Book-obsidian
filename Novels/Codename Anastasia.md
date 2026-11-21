@@ -5,7 +5,7 @@ original_title: "코드네임 아나스타샤"
 status: Unread
 rating: ""
 volumes_read: 0
-volumes_total: 1
+volumes_total: 10
 genre:
   - Korean Novel
   - BL
@@ -16,8 +16,8 @@ cover: https://cdn.thestorygraph.com/koeg0jjutys41gdm8bkif0th2z9n
 mood: []
 started: 
 finished: ""
-statuspub: Completed
-en_published: 0
+statuspub: ongoing
+en_published: 2
 pairing: "Kwon Taekjoo x Zhenya"
 ---
 
