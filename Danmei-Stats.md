@@ -207,7 +207,19 @@ topAuthors.forEach(([name, count]) => makeRow(authorChart, name, (count / maxA) 
 // EN license status
 sectionTitle(root, "🏷️ EN License Status");
 const enGroups = { complete: 0, ongoing: 0, upcoming: 0, "not licensed": 0 };
-active.forEach(p => { const sp = String(p.statuspub || "").toLowerCase().trim(); if (enGroups[sp] !== undefined) enGroups[sp]++; });
+function normalizeEnStatus(p) {
+  const sp = String(p.statuspub || "").toLowerCase().trim();
+  if (["complete", "completed", "finished"].includes(sp)) return "complete";
+  if (["not licensed", "not_licensed"].includes(sp)) return "not licensed";
+  if (sp === "upcoming") return "upcoming";
+  if (sp === "licensed") return (parseInt(p.en_published) || 0) > 0 ? "ongoing" : "upcoming";
+  if (sp === "ongoing") return "ongoing";
+  return null;
+}
+active.forEach(p => {
+  const sp = normalizeEnStatus(p);
+  if (sp) enGroups[sp]++;
+});
 const enColors = { complete: "#22c55e", ongoing: "#eab308", upcoming: "#3b82f6", "not licensed": "#6b7280" };
 const enChart = root.createEl("div", { cls: "st-chart" });
 const maxEn = Math.max(...Object.values(enGroups), 1);
