@@ -15,8 +15,8 @@ genre:
 cover: https://images.thalia.media/00/-/8682d466cdf542af89395e31c5a74089/murderous-lewellyn-s-candlelit-dinner-1-taschenbuch-sumnagi.jpeg
 started: 
 finished: ""
-statuspub: Completed
-en_published: 5
+statuspub: complete
+en_published: 6
 pairing: "Shavonne x Lewellyn"
 ---
 
