@@ -11,8 +11,8 @@ cover: https://sevenseasentertainment.com/wp-content/uploads/2025/09/panguanDN1_
 mood: [mysterious, emotional, dark, hopeful]
 started: 
 finished: ""
-statuspub: licensed
-en_published: 0
+statuspub: ongoing
+en_published: 1
 
 ---
 
