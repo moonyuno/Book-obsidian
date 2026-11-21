@@ -17,10 +17,10 @@ genre:
 mood: []
 started: 
 finished: ""
-statuspub: Completed
+statuspub: not licensed
 en_published: 0
 pairing: "Ji Huaizhen x Tuoba Yanchi"
-Cover: https://i.imgur.com/jIDZU2s.jpeg
+cover: https://i.imgur.com/jIDZU2s.jpeg
 ---
 
 
