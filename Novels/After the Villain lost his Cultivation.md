@@ -20,7 +20,7 @@ finished: ""
 statuspub: not licensed
 en_published: 0
 pairing: Xi Jianglan x Sheng Jiao
-cover: https://cdn.novelupdates.com/images/2025/06/After-the-Villain-Lost-His-Cultivation.jpg
+cover: "https://images.weserv.nl/?url=cdn.novelupdates.com/images/2025/06/After-the-Villain-Lost-His-Cultivation.jpg"
 ---
 
 
